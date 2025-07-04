@@ -57,8 +57,10 @@ def update_output(selected_type):
     )
     return text, fig
 
-# Jalankan aplikasi
-if __name__ == '__main__':
-     app.run_server(debug=True, host="0.0.0.0", port=8000)
-    
+import os
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))  # Railway akan set PORT env
+    app.run_server(debug=True, host="0.0.0.0", port=port)
+
     
