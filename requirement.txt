@@ -1,7 +1,3 @@
 dash
 pandas
 plotly.express
-dcc 
-html 
-Input 
-Output
